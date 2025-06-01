@@ -1,0 +1,29 @@
+# Grav system files
+.cache/
+.backups/
+.logs/
+tmp/
+
+# Grav user-specific files (optional)
+user/accounts/
+user/config/security.yaml
+
+# Grav vendor and dependencies
+vendor/
+bin/
+composer.lock
+
+# Grav CLI logs
+grav.log
+
+# macOS/Linux/Windows junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# IDE/editor stuff
+.idea/
+.vscode/
+*.sublime-*
