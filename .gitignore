@@ -1,4 +1,4 @@
-# Grav system files
+# Grav runtime directories
 .cache/
 .backups/
 .logs/
@@ -7,23 +7,33 @@ tmp/
 # Grav user-specific files (optional)
 user/accounts/
 user/config/security.yaml
+user/data/
+user/forms/
 
-# Grav vendor and dependencies
+# Grav plugins/themes (optional - track if you modify them)
+user/plugins/
+# user/themes/quark/  # Only ignore if unmodified
+
+# Grav core + vendor
+system/
 vendor/
 bin/
-composer.lock
+tests/
+
+# Commit lock file for consistent builds
+# composer.lock should be committed
 
 # Grav CLI logs
 grav.log
 
-# macOS/Linux/Windows junk
+# OS junk
 .DS_Store
 Thumbs.db
 ehthumbs.db
 Icon?
 desktop.ini
 
-# IDE/editor stuff
+# IDE/editor junk
 .idea/
 .vscode/
 *.sublime-*
