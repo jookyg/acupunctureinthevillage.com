@@ -11,14 +11,10 @@ spectre:
   exp: false
   icons: false
 custom_logo:
-  user/themes/quark/images/logo/village_wellness_center_logo.png:
-    name: village_wellness_center_logo.png
+  user/themes/quark/images/logo/banner_logo.png:
+    name: banner_logo.png
+    full_path: banner_logo.png
     type: image/png
-    size: 1825241
-    path: user/themes/quark/images/logo/village_wellness_center_logo.png
-custom_logo_mobile:
-  user/themes/quark/images/logo/village_wellness_center_logo.png:
-    name: village_wellness_center_logo.png
-    type: image/png
-    size: 1825241
-    path: user/themes/quark/images/logo/village_wellness_center_logo.png
+    size: 93712
+    path: user/themes/quark/images/logo/banner_logo.png
+custom_logo_mobile: {  }

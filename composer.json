@@ -1,0 +1,25 @@
+{
+  "name": "acupunctureinthevillage/site",
+  "description": "Village Wellness site using Grav",
+  "type": "project",
+  "require": {
+    "getgrav/grav": "^1.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Acupunctureinthevillage\\Site\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Greg Clapp",
+      "email": "jookyg@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "extra": {
+    "grav-site": {
+      "root-dir": "web/"
+    }
+  }
+}
