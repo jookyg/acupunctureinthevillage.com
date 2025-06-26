@@ -1,0 +1,53 @@
+.hero-overlay-box {
+  background: #f2ebdb;
+  opacity: 0.9;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feature-thumb {
+  width: 285px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.feature-image h6 {
+  margin-top: 1rem;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.hero-overlay-box h2 {
+  color: #000000 !important;
+  margin-top: 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+section img {
+  border-radius: 6px;
+}
+
+body {
+  background-color: #f2ebdb;
+}
+
+.modular-features .feature-content {
+  color: inherit !important;
+}
+
+.feature-image h3 {
+  font-size: 1.1rem;
+  font-weight: 350;
+}
+
+.features-testimonials .feature-content {
+  font-style: italic;
+}

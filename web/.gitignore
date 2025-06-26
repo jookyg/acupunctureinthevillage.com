@@ -23,7 +23,12 @@ user/data/*
 !user/data/.*
 user/plugins/*
 !user/plugins/.*
+# Ignore all themes
 user/themes/*
+# Except quark-custom
+!user/themes/quark-custom/
+!user/themes/quark-custom/**
+# Still ignore dotfiles if needed
 !user/themes/.*
 user/**/config/security.yaml
 
