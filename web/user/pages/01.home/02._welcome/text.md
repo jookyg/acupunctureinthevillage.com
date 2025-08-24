@@ -12,7 +12,7 @@ Carrie Bleiweiss, LAc, offers expert and gentle acupuncture for pain and stress 
 
 <div class="text-center">
     <strong>Appointments:</strong><br>
-    <a href="maito:carrie.bleiweiss@gmail.com">carrie.bleiweiss@gmail.com</a> or <a href="tel:+1-503-246-3358">(503) 246-3358</a><br><br>
+    <a href="maito:carrie.bleiweiss@gmail.com">carrie.bleiweiss@gmail.com</a> or <a href="tel:+1-503-246-3358">(503) 246-3358</a><br><em>By appointment only</em><br><br>
     <strong>Location:</strong><br>
 	<a href="https://maps.app.goo.gl/Jny63scVgiXRZpFaA">3580 SW Troy St, Portland, OR</a>
 </div>

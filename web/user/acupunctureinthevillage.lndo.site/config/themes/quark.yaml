@@ -1,11 +1,11 @@
 enabled: true
 production-mode: true
 grid-size: grid-lg
-header-fixed: false
+header-fixed: true
 header-animated: false
 header-dark: false
 header-transparent: false
-sticky-footer: false
+sticky-footer: true
 blog-page: /blog
 spectre:
   exp: false
@@ -17,4 +17,10 @@ custom_logo:
     type: image/png
     size: 93653
     path: user/themes/quark/images/logo/banner_logo_rev.png
-custom_logo_mobile: {  }
+custom_logo_mobile:
+  user/themes/quark/images/logo/banner_logo.png:
+    name: banner_logo.png
+    full_path: banner_logo.png
+    type: image/png
+    size: 93712
+    path: user/themes/quark/images/logo/banner_logo.png

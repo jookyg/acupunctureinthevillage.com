@@ -1,9 +1,9 @@
 ---
-title: 'One Page Demo Site'
+title: 'Village Wellness Center'
 menu: Home
-onpage_menu: true
 body_classes: 'title-h1h2 header-dark header-transparent'
 content:
     items: '@self.modular'
+header_class: header-dark
 ---
 
