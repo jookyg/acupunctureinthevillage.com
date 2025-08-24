@@ -22,13 +22,13 @@ tooling:
   blackhole-export:
     service: appserver
     cmd: blackhole --base-url http://acupunctureinthevillage.lndo.site --output-dir /app/dist --verbose
-  release:
-    service: appserver
-    description: "Export static release with wget"
-    cmd: >
-      wget --mirror --page-requisites --convert-links --adjust-extension --no-parent --no-host-directories --directory-prefix=/app/docs --execute=robots=off --restrict-file-names=windows https://acupunctureinthevillage.lndo.site/
   cc:
     service: appserver
     description: "Clear Grav cache (and warm homepage)"
     dir: /app/web
     cmd: bash -lc 'php bin/grav clearcache && curl -sS -I http://localhost/ >/dev/null || true'
+  release:
+    service: appserver
+    description: "Export static release with wget"
+    cmd: >
+      wget --mirror --page-requisites --convert-links --adjust-extension --no-parent --no-host-directories --directory-prefix=/app/docs --execute=robots=off --restrict-file-names=windows https://acupunctureinthevillage.lndo.site/

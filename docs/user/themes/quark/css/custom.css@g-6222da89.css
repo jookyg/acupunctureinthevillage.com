@@ -1,0 +1,197 @@
+.hero-overlay-box {
+  background: #f2ebdb;
+  opacity: 0.9;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-overlay-box h2 {
+  color: #000000 !important;
+  margin-top: 0;
+  font-size: 1.4rem !important;
+  font-weight: 300;
+}
+
+.feature-thumb {
+  width: 285px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  margin: auto
+}
+
+.feature-image h6 {
+  margin-top: 1rem;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+section img {
+  border-radius: 6px;
+}
+
+body {
+  background-color: #f2ebdb;
+  font-size: 1rem;
+  ;
+}
+
+.modular-features .feature-content {
+  color: inherit !important;
+}
+
+.modular-features .feature-image,
+.modular-features .feature-content {
+  text-align: left;
+}
+
+.feature-image h3 {
+  font-size: 1.1rem;
+  font-weight: 350;
+}
+
+.features-testimonials .feature-content {
+  font-style: italic;
+}
+
+#footer {
+  padding-bottom: 2px !important;
+  color: #50596c
+}
+
+#header, .mobile-menu {
+  position: fixed;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 1000 !important;
+}
+
+section.scrolled {
+  background-color: #222 !important;
+}
+
+.navigation a {
+  color: #454d5d !important;
+}
+
+.mobile-container .navigation {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  list-style-type: none;
+}
+
+section#start div.col-4 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+a.btn {
+  font-size: 1rem !important;
+}
+
+.scrolled .navigation a.active {
+  color: rgba(255, 255, 255, .7) !important;
+}
+
+#header:not(.scrolled) .navigation a.active {
+  color: #222 !important;
+}
+
+/* Compensate for the fixed header on inner pages */
+#body-wrapper, .site-content, main {
+  padding-top: 4.5rem; /* tweak to your header height (e.g., 72px ≈ 4.5rem) */
+}
+
+/* When jumping to anchors, keep targets from being hidden under the header */
+:target {
+  scroll-margin-top: 4.5rem;
+}
+
+body h1 {
+  display: none;
+}
+
+h2 {
+  margin-top: 0 !important;
+}
+
+section.hero {
+  padding-bottom: 3rem;
+}
+
+/* ----------- testimonials slider ---------- */
+.section-testimonials .t-card {
+  padding: 1.25rem 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.section-testimonials .t-name {
+  font-weight: 600;
+  margin: 0 0 .5rem;
+}
+
+.section-testimonials .t-quote {
+  font-style: italic;
+  margin: 0;
+  color: #4b5563;
+}
+
+.section-testimonials .splide__arrows {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* -------------- accordions -------------- */
+div.accordion {
+  margin-top: 1.5rem;
+}
+
+details {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+  padding: 0.25rem 0.75rem;
+}
+
+details div {
+  margin: 0.6rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* remove the browser's default marker */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Unicode chevron */
+summary::before {
+  content: "❯";             /* pick: "›", "❯", or "▶" */
+  margin-right: 5px;
+  transition: transform 0.2s ease;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Rotate on open */
+details[open] summary::before {
+  transform: rotate(90deg);
+  color: #333;
+}
