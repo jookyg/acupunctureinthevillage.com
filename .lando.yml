@@ -26,7 +26,7 @@ tooling:
     service: appserver
     description: "Export static release with wget"
     cmd: >
-      wget --mirror --page-requisites --convert-links --adjust-extension --no-parent --no-host-directories --directory-prefix=../docs --execute=robots=off --restrict-file-names=windows https://acupunctureinthevillage.lndo.site/
+      wget --mirror --page-requisites --convert-links --adjust-extension --no-parent --no-host-directories --directory-prefix=/app/docs --execute=robots=off --restrict-file-names=windows https://acupunctureinthevillage.lndo.site/
   cc:
     service: appserver
     description: "Clear Grav cache (and warm homepage)"
