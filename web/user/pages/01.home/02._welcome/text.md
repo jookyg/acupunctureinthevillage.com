@@ -17,6 +17,7 @@ Carrie Bleiweiss, LAc, offers expert and gentle acupuncture for pain and stress 
 	<a href="https://maps.app.goo.gl/Jny63scVgiXRZpFaA">3580 SW Troy St, Portland, OR</a>
 </div>
 
+<div class="accordion">
 <details>
   <summary>Learn more about Carrie</summary>
   <div>
@@ -33,4 +34,5 @@ Carrie Bleiweiss, LAc, offers expert and gentle acupuncture for pain and stress 
       <p>Donec sit amet iaculis est, ut venenatis sem. Nullam euismod sollicitudin mollis. Fusce malesuada auctor tincidunt. Pellentesque facilisis diam ut dui fringilla cursus. Cras sit amet dolor eget diam pharetra dignissim. Suspendisse eget ligula quis eros varius vulputate. Nam hendrerit vehicula risus, sed molestie purus convallis condimentum.</p>
  </div>
 </details>
+</div>
 

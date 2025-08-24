@@ -153,6 +153,10 @@ section.hero {
 }
 
 /* -------------- accordions -------------- */
+div.accordion {
+  margin-top: 1.5rem;
+}
+
 details {
   border: 1px solid #ddd;
   border-radius: 6px;
