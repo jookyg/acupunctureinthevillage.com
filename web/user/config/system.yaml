@@ -2,7 +2,7 @@ home:
   alias: '/home'
 
 pages:
-  theme: quark-custom
+  theme: quark
   markdown:
     extra: false
   process:
@@ -39,3 +39,5 @@ debugger:
   twig: true
   shutdown:
     close_connection: true
+
+absolute_urls: false

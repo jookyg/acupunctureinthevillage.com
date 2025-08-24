@@ -1,0 +1,31 @@
+jQuery(function($) {
+  var $overlay = $('#overlay');
+
+  function closeMenu() {
+    $overlay.removeClass('open')
+            .attr('aria-hidden', 'true');
+    $('body').removeClass('mobile-nav-open');
+    $('#toggle').removeClass('active');
+  }
+
+  // Close on any nav link or the logo inside the overlay
+  $overlay.on('click', '.overlay-menu a, .mobile-logo a', function(e) {
+    var href = $(this).attr('href') || '';
+    if (href.startsWith('#')) {
+      // let the browser scroll first, then close
+      setTimeout(closeMenu, 0);
+    } else {
+      closeMenu();
+    }
+  });
+
+  // Optional: tap outside menu content closes overlay
+  $overlay.on('click', function(e) {
+    if (e.target === this) {
+      closeMenu();
+    }
+  });
+
+  // Close if hash changes programmatically (smooth-scroll, etc.)
+  $(window).on('hashchange', closeMenu);
+});

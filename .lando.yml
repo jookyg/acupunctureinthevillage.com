@@ -12,8 +12,8 @@ services:
       - curl -OL https://golang.org/dl/go1.22.3.linux-amd64.tar.gz
       - rm -rf /usr/local/go && tar -C /usr/local -xzf go1.22.3.linux-amd64.tar.gz
       - echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
-      - /usr/local/go/bin/go install github.com/liangyongping/blackhole@latest
-      - ln -s /root/go/bin/blackhole /usr/local/bin/blackhole
+#      - /usr/local/go/bin/go install github.com/liangyongping/blackhole@latest
+#      - ln -s /root/go/bin/blackhole /usr/local/bin/blackhole
 
 tooling:
   grav:
@@ -22,3 +22,13 @@ tooling:
   blackhole-export:
     service: appserver
     cmd: blackhole --base-url http://acupunctureinthevillage.lndo.site --output-dir /app/dist --verbose
+  release:
+    service: appserver
+    description: "Export static release with wget"
+    cmd: >
+      wget --mirror --page-requisites --convert-links --adjust-extension --no-parent --no-host-directories --directory-prefix=../docs --execute=robots=off --restrict-file-names=windows https://acupunctureinthevillage.lndo.site/
+  cc:
+    service: appserver
+    description: "Clear Grav cache (and warm homepage)"
+    dir: /app/web
+    cmd: bash -lc 'php bin/grav clearcache && curl -sS -I http://localhost/ >/dev/null || true'
